@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  font: 500;
+  min-height: 100vh;
+  font-size: 1rem;
+}
+
+.container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 0.35fr 0.65fr;
+}
+
+.backgroundImg {
+  background-image: url(./img/Group\ 10.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.block {
+  display: block;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-left {
+  justify-content: start;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-end {
+  justify-content: end;
+}
+.g-1 {
+  gap: 0.5rem;
+}
+
+.b-l {
+  font-size: 1.5rem;
+}
+
+.b-m {
+  font-size: 1rem;
+}
+
+.b-s {
+  font-size: 0.7rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+/* FORM STYLING */
+
+.formContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 12rem;
+}
+
+form {
+  width: 30rem;
+}
+
+input {
+  padding: 0.6rem 0.4rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  border: 1px solid #dfdee0;
+}
+
+input:focus {
+  outline: none;
+  border-color: #21092f;
+}
+
+.cardDetails {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.exp {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 0.5rem;
+}
+
+.exp label:first-child {
+  grid-column: 1/3;
+}
+
+.submitBtn {
+  background-color: #21092f;
+  color: white;
+  padding: 0.8rem 0;
+  cursor: pointer;
+  border: none;
+}
+
+input {
+  font-size: 1rem;
+}
+.text-white {
+    color: white;
+}
+label {
+  margin-bottom: 1rem;
+}
+/* alert */
+
+.none {
+  display: none;
+}
+
+.alert1,
+.alert2,
+.alert3,
+.alery4 {
+  color: red;
+}
+
+/* spacing */
+
+.my-3 {
+  margin: 1.5rem 0;
+}
+.mt-3 {
+    margin-top: 1.5rem;
+}
+.mb-3 {
+  margin-bottom: 1.5rem;
+}
+
+/* card holder */
+
+.cardContainer {
+  position: absolute;
+  top: 50%;
+  width: 540px;
+  left: 15%;
+  transform: translateY(-50%);
+}
+
+/* cards */
+
+.card1 {
+  width: 447px;
+  height: 245px;
+  border-radius: 0.7rem;
+  background-image: url(./img/Oval\ Copy\ 2.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 1.5rem;
+  margin-bottom: 66px;
+}
+.card2 {
+  width: 447px;
+  height: 245px;
+  border-radius: 0.7rem;
+  background-image: url(./img/greyBackground.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.darkBanner {
+  margin-top: 1.5rem;
+  height: 3.5rem;
+  background-color: #2f2f2f;
+  margin-bottom: 2.5rem;
+}
+.greyBanner {
+  width: 361px;
+  margin: 0 auto;
+  background-color: #adb5be;
+  border-radius: 0.3rem;
+  display: flex;
+  justify-content: end;
+  padding: 0.4rem 0.5rem;
+  color: white;
+}
+
+.dotHolder {
+  margin-bottom: 67px;
+}
+
+.fullDot {
+  height: 47px;
+  width: 47px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.hollowDot {
+  height: 21px;
+  width: 21px;
+  border-radius: 50%;
+  border: 0.5px solid white;
+}
+
+@media screen and (max-width: 1650px) {
+  .cardContainer {
+    left: 13%;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .cardContainer {
+    left: 10%;
+  }
+}
+
+@media screen and (max-width: 1370px) {
+  .cardContainer {
+    left: 9%;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .cardContainer {
+    left: 4%;
+  }
+}
+@media screen and (max-width: 1170px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 22rem;
+  }
+  .cardContainer {
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+    position: relative;
+  }
+  .card1 {
+    position: absolute;
+    top: 62%;
+    margin-bottom: 0;
+  }
+  .formContainer {
+    padding-left: 0;
+  }
+}
