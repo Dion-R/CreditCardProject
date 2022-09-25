@@ -13,17 +13,17 @@
 // console.log(first);
 // console.log(second);
 
-// const bob =  {
-//     first: 'bob', 
-//     last: 'sanders', 
-//     city: 'chicago', 
-//     siblings: {
-//         sister: 'jane',
-//         brother: ['dion','max'] 
-//     }
-// }
+const bob =  {
+    first: 'bob', 
+    last: 'sanders', 
+    city: 'chicago', 
+    siblings: {
+        sister: 'jane',
+        brother: ['dion','max'] 
+    }
+}
 
-// const {siblings:{sister: favSister}} = bob 
+const {siblings:{sister: favSister}} = bob 
 
 // function person({first, last}) {
 //     console.log(first);
@@ -32,10 +32,11 @@
 
 // person(bob);
 
-const person = 'Peter Smith';
-const employee = '23456-emp-peter-smith';
-const manager = '23456-MAN-JOHN-DOE'
+// const person = 'Peter Smith';
+// const employee = '23456-emp-peter-smith';
+// const manager = '23456-MAN-JOHN-DOE'
 
 // console.log(person.startsWith('P'))
 
-console.log(employee.includes('emp'))
+// console.log(employee.includes('emp'))
+

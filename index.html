@@ -23,14 +23,15 @@
                 <div class="fullDot"></div>
                 <div class="hollowDot"></div>
               </div>
-              <span class="b-l mb-3 text-white number1">0000</span>
-              <span class="b-l mb-3 text-white number2">0000</span>
-              <span class="b-l mb-3 text-white number3">0000</span>
-              <span class="b-l mb-3 text-white number4">0000</span>
-              <div class="d-flex align-center justify-between mt-3">
+              <div class="d-flex align-center">
+                <p class="text-white cardNumber b-l">0000 0000 0000 0000</p>
+              </div>
+              <div class="d-flex align-center justify-between">
                 <p class="name text-white">JANE APPLESEED</p>
                 <div>
-                  <span class="monthOutput text-white">00</span><span class="text-white">/</span><span class="yearOutput text-white">00</span>
+                  <span class="monthOutput text-white">00</span
+                  ><span class="text-white">/</span
+                  ><span class="yearOutput text-white">00</span>
                 </div>
               </div>
             </div>
@@ -55,7 +56,7 @@
               id="cardholderName"
               placeholder="e.g. Dion Riotto"
             />
-            <p class="alert1 none b-m">Can't be blank</p>
+            <p class="alert alert1 none b-s">Can't be blank</p>
           </div>
           <div class="my-3">
             <label for="cardholderName" class="block">CARD NUMBER</label>
@@ -63,22 +64,28 @@
               type="text"
               id="cardholderNumber"
               placeholder="e.g. 1234 4567 8910 0000"
-              maxlength="19"
             />
-            <p class="alert2 none b-m">Can't be blank</p>
+            <p class="alert none b-s numbers">Incorrect Number</p>
+            <p class="alert none b-s letters">Can't contain letters</p>
+            <p class="alert alert2 none b-s">Can't be blank</p>
           </div>
           <div class="cardDetails my-3">
             <div class="exp">
               <label for="expDate">EXP. DATE (MM/YY)</label>
-              <input type="text" placeholder="MM" class="month" maxlength="2"/>
-              <input type="text" placeholder="YY" class="year" maxlength="2"/>
-              <p class="alert3 none b-m">Can't be blank</p>
+              <input type="text" placeholder="MM" class="month" maxlength="2" />
+              <input type="text" placeholder="YY" class="year" maxlength="2" />
             </div>
             <div class="cvc">
               <label for="" class="block">CVC</label>
-              <input type="text" placeholder="e.g. 123" class="cvcInput" maxlength="3"/>
-              <p class="alert4 none b-m">Can't be blank</p>
+              <input
+                type="text"
+                placeholder="e.g. 123"
+                class="cvcInput"
+                maxlength="3"
+              />
             </div>
+            <p class="alert alert3 alert4 none b-s">Can't be blank</p>
+            <p class="alert alert5 none b-s">Can't be blank</p>
           </div>
           <input
             type="submit"
